@@ -12,8 +12,6 @@ import com.example.emmiter.repository.Employee;
 import com.example.emmiter.service.EmitterService;
 
 
-
-
 @RestController
 public class EmitterController {
 
@@ -21,7 +19,6 @@ public class EmitterController {
 	
 	@Autowired
 	public EmitterController(EmitterService emitterService) {
-		super();
 		this.emitterService = emitterService;
 	}
 	
