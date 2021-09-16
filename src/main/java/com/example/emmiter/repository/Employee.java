@@ -2,13 +2,22 @@ package com.example.emmiter.repository;
 
 import java.util.Date;
 
+@Entity
 public class Employee {
 	
-	String name;
-	long id;
-	long salary;
-	int age;
-	Date dob;
+	private String name;
+
+        @Id
+	@GeneratedValue
+        private long id;
+
+	private long salary;
+	private int age;
+	private Date dob;
+
+        public Person() {
+	}
+
 	
 	public String getName() {
 		return name;
