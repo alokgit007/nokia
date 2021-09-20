@@ -39,9 +39,14 @@
 		</dependency>
 		
 		<dependency>
-	        <groupId>com.networknt</groupId>
-	        <artifactId>json-schema-validator</artifactId>
+	             <groupId>com.networknt</groupId>
+	             <artifactId>json-schema-validator</artifactId>
 	        <version>1.0.42</version>
+	
+		<dependency>
+                   <groupId>org.apache.kafka</groupId>
+                   <artifactId>kafka-clients</artifactId>
+        </dependency>
         </dependency>
 	</dependencies>
 
