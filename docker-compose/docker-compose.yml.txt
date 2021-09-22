@@ -1,0 +1,14 @@
+version: '2'
+services:
+  importer:
+    image: importer
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - 'KAFKA_BOOTSTRAPSERVERS=kafka:9092'
+
+  notification:
+    image: notification
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - 'KAFKA_BOOTSTRAPSERVERS=kafka:9092'
+ 
