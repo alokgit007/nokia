@@ -18,7 +18,8 @@ Non-Function Requirements:
 
 Documentation using Swagger
 
-Performance Metrics
+Performance Metrics:
+we run the application and browse to the page http://locahost:8080/actuator/prometheus, this will display metrics data.
 
 Docker-compose tests
 
