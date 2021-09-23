@@ -16,7 +16,7 @@ public class JsonValidator {
 	    return Thread.currentThread().getContextClassLoader().getResourceAsStream(path);
 	}
 	 
-	public static void main(String[] args) throws Exception {
+	public static void validate() throws Exception {
 	    ObjectMapper objectMapper = new ObjectMapper();
 	    JsonSchemaFactory schemaFactory = JsonSchemaFactory.getInstance(SpecVersion.VersionFlag.V201909);
 	 
