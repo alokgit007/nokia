@@ -35,13 +35,13 @@ public class EmitterController {
 	}
 	
 	@PostMapping("/import")
-	public  ResponseEntity saveData(@RequestBody Employee employee){
+	public  ResponseEntity saveData(@Valid @RequestBody Employee employee){
 		 emitterService.saveData(employee);
 		 return new ResponseEntity<>("employee data saved successfully",HttpStatus.CREATED);
 	}
 
 	@PutMapping("/modify")
-	public  ResponseEntity  updateData(@RequestBody Employee employee){
+	public  ResponseEntity  updateData(@Valid @RequestBody Employee employee){
 		Employee result=emitterService.updateData(employee);
 		log.debug("SEND store alert for Store: {}", employee);
 		alertService.alertStoreStatus(result);
